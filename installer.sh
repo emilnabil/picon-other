@@ -1,6 +1,6 @@
 #!/bin/sh # 
- # # Command: wget https://raw.githubusercontent.com/emilnabil/picon-others/main/installer.sh -qO - | /bin/sh # # ########################################### ###########################################  
-MY_URL="https://raw.githubusercontent.com/emilnabil/picon-others/main"  
+ # # Command: wget https://raw.githubusercontent.com/emilnabil/picon-other/main/installer.sh -qO - | /bin/sh # # ########################################### ###########################################  
+MY_URL="https://raw.githubusercontent.com/emilnabil/picon-other/main"  
 PICONCAM="piconCam.tar.gz"
 PICONSAT="piconSat.tar.gz"
 PICONCRYPT="piconCrypt.tar.gz"
@@ -30,9 +30,6 @@ wait
 cd ..
 set +e
 rm -f /tmp/$PICONSAT
-sleep 2;
-echo "" 
-echo "" 
 echo "****************************************************************************************************************************"
 echo "         INSTALL PICON-Prov    "
 cd /tmp
@@ -69,6 +66,8 @@ echo "**************************************************************************
 wait
 killall -9 enigma2
 exit 0
+
+
 
 
 
