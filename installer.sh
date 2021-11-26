@@ -12,7 +12,7 @@ echo "==========================================================================
 echo "         INSTALL PICON-CAM    "
 cd /tmp
 set -e 
-wget "$MY-URL/$PICONCAM"
+wget "$MY_URL/$PICONCAM"
 wait
 tar -xzf $PICONCAM  -C /
 wait
@@ -34,7 +34,7 @@ echo "**************************************************************************
 echo "         INSTALL PICON-Prov    "
 cd /tmp
 set -e 
-wget "$MY-URL/$PICONPROV"
+wget "$MY_URL/$PICONPROV"
 wait
 tar -xzf $PICONPROV  -C /
 wait
@@ -45,7 +45,7 @@ echo "**************************************************************************
 echo "         Install Picon-Crypt    "
 cd /tmp
 set -e 
-wget "$MY-URL/$PICONCRYPT"
+wget "$MY_URL/$PICONCRYPT"
 wait
 tar -xzf $PICONCRYPT  -C /
 wait
@@ -66,6 +66,7 @@ echo "**************************************************************************
 wait
 killall -9 enigma2
 exit 0
+
 
 
 
